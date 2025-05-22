@@ -109,7 +109,7 @@ public class Logger {
     private void setupCrashLogging() {
         Thread.setDefaultUncaughtExceptionHandler((t, ex) -> {
             try {
-                logCritical("CRITICAL : Uncaught Exception - " + ex);
+                logCritical("Uncaught Exception - " + ex);
             } catch (Exception e) {
                 System.err.println("Échec log critique: " + e.getMessage());
             }
